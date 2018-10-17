@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#header {
+  background-image: url("../assets/background.jpg");
+  height: 20vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5em;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: repeat(autofit, minmax(200px, 1fr));*/
+  grid-column-gap: 1em;
+  justify-content: space-around;
+}
+
+.heading {
+  text-align: center;
+}
+
+.content section {
+  padding: 0;
+  background-color: #B3B3B3;
+  margin: 20px 10%;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 0.2em 1em;
+  border: 0;
+  background-color: #AA2216;
+  color: white;
+  cursor: pointer;
+}
