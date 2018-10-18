@@ -1,0 +1,20 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 1em;
+  background: #f2F2f2;
+}

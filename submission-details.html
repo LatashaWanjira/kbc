@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/carousel.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/submission-details.css">
     <title>KBC | Home</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -67,38 +67,51 @@
       </div>
     </div>
     <div class="content">
-      <div class="payment-option">
-        <button class="btn" onclick="openPayment('mpesa')">Mpesa</button>
-        <button class="btn" onclick="openPayment('card')">Card</button>
-      </div>
-      <div id="mpesa" class="payment-mode">
-        <form class="" action="index.html" method="post">
-          <input type="text" name="" value="" placeholder="Phone Number">
-          <br>
-          <button class="btn">Amount: KES 8,000</button>
-          <button class="btn pay">
-            <a href="success.html">Pay</a>
-          </button>
-        </form>
+      <form class="" action="index.html" method="post">
+        <div class="form-style">
+          <div class="image-submission">
+            <h1>1. Submit Ad &amp; Title</h1>
+            <input class="ad-name" type="" name="" value="" placeholder="Title">
+            <h1>2. Ad details</h1>
+            <div>
+              <label for="photos">Upload Photos</label>
+              <input type="file" name="photos" value="">
+            </div><br>
+            <div>
+              <label for="video">Upload Video</label>
+              <input type="file" name="video" value="">
+            </div><br>
+            <div>
+              <label for="audio">Upload Video</label>
+              <input type="file" name="audio" value="">
+            </div>
 
-      </div>
-      <div id="card" class="payment-mode" style="display: none">
-        <form class="" action="index.html" method="post">
-          <div class="form-style">
-            <input type="text" name="" value="" placeholder="Phone Number">
-            <input type="text" name="" value="" placeholder="Card Holder's First Name">
-            <input type="text" name="" value="" placeholder="Email">
-            <input type="text" name="" value="" placeholder="Expiry">
-            <input type="text" name="" value="" placeholder="Card Holder's Last Name">
-            <input type="text" name="" value="" placeholder="CVV">
           </div>
-          <br>
-          <button class="btn">Amount: KES 8,000</button>
-          <button class="btn pay">
-            <a href="success.html">Pay</a>
-          </button>
-        </form>
-      </div>
-    </body>
+          <div class="details-submission">
+            <textarea name="description" rows="5" cols="50" placeholder="Description (Max: 100 Characters)"></textarea>
+            <br>
+            <input type="text" name="" value="" placeholder="Other Comments">
+            <br>
+            <input list="browsers" name="browser" placeholder="Radio Stations">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+                <option value="Firefox">
+                  <option value="Chrome">
+                    <option value="Opera">
+                      <option value="Safari"></datalist>
+                      <button class="btn">Amount: KES 8,000</button>
 
-  </html>
+                      <button class="btn">
+                        <a href="payment.html">Submit &amp; Make Payment</a>
+                      </button>
+
+                    </div>
+
+                  </div>
+
+                </form>
+
+              </div>
+            </body>
+
+          </html>

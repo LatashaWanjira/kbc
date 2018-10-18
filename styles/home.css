@@ -1,29 +1,5 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-#header {
-  background-image: url("../assets/background.jpg");
-  height: 20vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 5em;
-}
-
-.carousel {
-  margin: 3em;
-  padding: 1em;
-  background: #333;
+.btn a {
   color: white;
-  line-height: 1em;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.autoplay .info {
-  border-left: 3px solid yellow;
-  padding-left: 1em;
 }
 
 .content {
