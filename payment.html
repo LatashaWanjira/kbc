@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/payment.css">
     <title>KBC | Home</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -65,21 +65,34 @@
       </div>
     </div>
     <div class="content">
-      <h3>Let's get started...</h3>
-      <form class="" action="index.html" method="post">
-        <div class="form-style">
-          <input type="text" name="" value="" placeholder="Full Name">
+      <div class="payment-option">
+        <button class="btn" onclick="openPayment('mpesa')">Mpesa</button>
+        <button class="btn" onclick="openPayment('card')">Card</button>
+      </div>
+      <div id="mpesa" class="payment-mode">
+        <form class="" action="index.html" method="post">
           <input type="text" name="" value="" placeholder="Phone Number">
-          <input type="text" name="" value="" placeholder="Company">
-          <input type="text" name="" value="" placeholder="City/Town">
-          <input type="text" name="" value="" placeholder="ID Number">
-          <input type="text" name="" value="" placeholder="Email">
-          <input type="text" name="" value="" placeholder="Brand">
-          <input type="text" name="" value="" placeholder="Address">
-        </div>
-        <button type="button" name="button" class="btn">Continue</button>
-      </form>
-    </div>
-  </body>
+          <br>
+          <button class="btn" onclick="openPayment('card')">Card</button>
+          <button class="btn pay">Pay</button>
+        </form>
 
-</html>
+      </div>
+      <div id="card" class="payment-mode" style="display: none">
+        <form class="" action="index.html" method="post">
+          <div class="form-style">
+            <input type="text" name="" value="" placeholder="Phone Number">
+            <input type="text" name="" value="" placeholder="Card Holder's First Name">
+            <input type="text" name="" value="" placeholder="Email">
+            <input type="text" name="" value="" placeholder="Expiry">
+            <input type="text" name="" value="" placeholder="Card Holder's Last Name">
+            <input type="text" name="" value="" placeholder="CVV">
+          </div>
+          <br>
+          <button class="btn" onclick="openPayment('mpesa')">Mpesa</button>
+          <button class="btn pay">Pay</button>
+        </form>
+      </div>
+    </body>
+
+  </html>

@@ -3,6 +3,18 @@ body {
   margin: 0;
 }
 
+body {
+  box-sizing: border-box;
+  margin: 0;
+  overflow: hidden;
+}
+
+.btn {
+  font-size: 1.5em;
+  padding: 1em;
+  background: #f2F2f2;
+}
+
 #header {
   background-image: url("../assets/background.jpg");
   height: 20vh;
@@ -12,31 +24,54 @@ body {
   padding-top: 5em;
 }
 
-.btn {
-  font-size: 1.5em;
-  padding: 0.2em 1em;
-  border: 0;
-  background-color: #AA2216;
+.carousel {
+  margin: 3em;
+  padding: 1em;
+  background: #333;
   color: white;
-  cursor: pointer;
+  line-height: 1em;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.content h3 {
+.autoplay .info {
+  border-left: 3px solid yellow;
+  padding-left: 1em;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  padding: 5em;
   text-align: center;
+}
+
+.content input {
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border: 0;
+  border-bottom: 1px solid #333;
+  margin: 1em 0;
+}
+
+.content .pay {
+  float: right;
+}
+
+.content .btn {
+  margin-top: 3em;
 }
 
 .form-style {
   display: grid;
   grid-template-rows: repeat(4, 50px);
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 3em;
+  grid-gap: 3em;
   margin-top: 20px;
 }
 
 .form-style input {
   margin: 0 10%;
   border: 0;
-  background: #B3B3B3;
+  background: #F2F2F2;
   padding: 0 2em;
 }
 

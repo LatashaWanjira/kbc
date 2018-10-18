@@ -1,12 +1,14 @@
 body {
   box-sizing: border-box;
   margin: 0;
+  background-color: #B3B3B3;
 }
 
 #header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  background-color: white;
 }
 
 #header ul {
